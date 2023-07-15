@@ -1,9 +1,7 @@
 import re
 import openai 
 
-# openai.api_key = "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"
-
-openai.api_key = "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" #os.getenv("OPENAI_API_KEY")
+openai.api_key = "your_api_key" #os.getenv("OPENAI_API_KEY")
 
 def call_openai(prompt, max_tokens=2300):
     messages = [{"role": "system", "content": "you are career advisor"}]
